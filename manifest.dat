@@ -1,43 +1,37 @@
 {
-  "version": 7,
-  "totalPuzzles": 120000,
-  "batchSize": 100,
+  "version": 9,
+  "careerStages": 250,
+  "totalPuzzles": 30000,
   "difficulties": [
     {
       "id": 0,
       "name": "Beginner",
-      "puzzleCount": 20000,
-      "batchCount": 200
+      "puzzleCount": 5000
     },
     {
       "id": 1,
       "name": "Easy",
-      "puzzleCount": 20000,
-      "batchCount": 200
+      "puzzleCount": 5000
     },
     {
       "id": 2,
       "name": "Medium",
-      "puzzleCount": 20000,
-      "batchCount": 200
+      "puzzleCount": 5000
     },
     {
       "id": 3,
       "name": "Hard",
-      "puzzleCount": 20000,
-      "batchCount": 200
+      "puzzleCount": 5000
     },
     {
       "id": 4,
       "name": "Expert",
-      "puzzleCount": 20000,
-      "batchCount": 200
+      "puzzleCount": 5000
     },
     {
       "id": 5,
       "name": "Master",
-      "puzzleCount": 20000,
-      "batchCount": 200
+      "puzzleCount": 5000
     }
   ],
   "techniques": [
@@ -47,8 +41,7 @@
       "description": "A cell has only one remaining candidate, so that digit must be its value.",
       "instruction": "Find a cell with one candidate and enter that digit.",
       "difficulty": 0,
-      "puzzleCount": 500,
-      "batchCount": 5
+      "puzzleCount": 50
     },
     {
       "id": 1,
@@ -56,8 +49,7 @@
       "description": "A digit has only one possible cell in a row, column or box, even if that cell has other candidates.",
       "instruction": "Find the only possible cell for a digit in a unit and enter it.",
       "difficulty": 1,
-      "puzzleCount": 500,
-      "batchCount": 5
+      "puzzleCount": 50
     },
     {
       "id": 2,
@@ -65,8 +57,7 @@
       "description": "All candidates for a digit in a box lie in one row or column, so that digit cannot appear elsewhere along that line.",
       "instruction": "Remove that digit from the rest of the row or column outside the box.",
       "difficulty": 2,
-      "puzzleCount": 500,
-      "batchCount": 5
+      "puzzleCount": 50
     },
     {
       "id": 3,
@@ -74,8 +65,7 @@
       "description": "All candidates for a digit in a row or column lie in one box, so that digit cannot appear elsewhere in the box.",
       "instruction": "Remove that digit from the other cells in the box outside the line.",
       "difficulty": 2,
-      "puzzleCount": 500,
-      "batchCount": 5
+      "puzzleCount": 50
     },
     {
       "id": 4,
@@ -83,8 +73,7 @@
       "description": "Two cells in a unit contain only the same two candidates, reserving those digits for those cells.",
       "instruction": "Remove the two digits from all other cells in the unit.",
       "difficulty": 2,
-      "puzzleCount": 500,
-      "batchCount": 5
+      "puzzleCount": 50
     },
     {
       "id": 5,
@@ -92,8 +81,7 @@
       "description": "Two digits occur only in the same two cells of a unit, reserving those cells for those digits.",
       "instruction": "Remove all other candidates from those two cells.",
       "difficulty": 2,
-      "puzzleCount": 500,
-      "batchCount": 5
+      "puzzleCount": 50
     },
     {
       "id": 6,
@@ -101,8 +89,7 @@
       "description": "Three cells in a unit contain only three distinct candidates between them, reserving those digits for those cells.",
       "instruction": "Remove those three digits from the other cells in the unit.",
       "difficulty": 3,
-      "puzzleCount": 500,
-      "batchCount": 5
+      "puzzleCount": 50
     },
     {
       "id": 7,
@@ -110,8 +97,7 @@
       "description": "Three digits occur only within the same three cells of a unit, reserving those cells for those digits.",
       "instruction": "Remove all other candidates from those three cells.",
       "difficulty": 3,
-      "puzzleCount": 500,
-      "batchCount": 5
+      "puzzleCount": 50
     },
     {
       "id": 8,
@@ -119,8 +105,7 @@
       "description": "Four cells in a unit contain only four distinct candidates between them, reserving those digits for those cells.",
       "instruction": "Remove those four digits from the other cells in the unit.",
       "difficulty": 3,
-      "puzzleCount": 500,
-      "batchCount": 5
+      "puzzleCount": 50
     },
     {
       "id": 9,
@@ -128,8 +113,7 @@
       "description": "Four digits occur only within the same four cells of a unit, reserving those cells for those digits.",
       "instruction": "Remove all other candidates from those four cells.",
       "difficulty": 3,
-      "puzzleCount": 95,
-      "batchCount": 1
+      "puzzleCount": 50
     },
     {
       "id": 10,
@@ -137,8 +121,7 @@
       "description": "A digit occurs in exactly two matching columns in two rows, or vice versa, forming a rectangle.",
       "instruction": "Remove that digit from the other cells in the two covering columns or rows.",
       "difficulty": 3,
-      "puzzleCount": 500,
-      "batchCount": 5
+      "puzzleCount": 50
     },
     {
       "id": 11,
@@ -146,8 +129,7 @@
       "description": "A digit is confined to three covering columns across three rows, or vice versa.",
       "instruction": "Remove that digit from the covering lines outside the three selected lines.",
       "difficulty": 4,
-      "puzzleCount": 500,
-      "batchCount": 5
+      "puzzleCount": 50
     },
     {
       "id": 12,
@@ -155,8 +137,7 @@
       "description": "A digit is confined to four covering columns across four rows, or vice versa.",
       "instruction": "Remove that digit from the covering lines outside the four selected lines.",
       "difficulty": 4,
-      "puzzleCount": 500,
-      "batchCount": 5
+      "puzzleCount": 50
     },
     {
       "id": 13,
@@ -164,8 +145,7 @@
       "description": "A two-candidate pivot sees two two-candidate wings. Each wing shares a different pivot digit and both share a third digit.",
       "instruction": "Remove the shared third digit from cells that see both wings.",
       "difficulty": 4,
-      "puzzleCount": 500,
-      "batchCount": 5
+      "puzzleCount": 50
     },
     {
       "id": 14,
@@ -173,8 +153,7 @@
       "description": "Two rows or columns each have exactly two candidates for a digit, with one endpoint of each aligned. At least one unaligned endpoint must contain the digit.",
       "instruction": "Remove that digit from cells that see both unaligned endpoints.",
       "difficulty": 4,
-      "puzzleCount": 500,
-      "batchCount": 5
+      "puzzleCount": 50
     },
     {
       "id": 15,
@@ -182,8 +161,7 @@
       "description": "A row and a column each contain exactly two candidates for a digit. One endpoint from each lies in the same box, forcing at least one of the other endpoints to be true.",
       "instruction": "Remove that digit from cells that see both outer endpoints.",
       "difficulty": 4,
-      "puzzleCount": 500,
-      "batchCount": 5
+      "puzzleCount": 50
     },
     {
       "id": 16,
@@ -191,8 +169,7 @@
       "description": "A three-candidate pivot sees two two-candidate wings whose candidates are subsets of the pivot. One digit is shared by all three cells.",
       "instruction": "Remove the shared digit from cells that see the pivot and both wings.",
       "difficulty": 4,
-      "puzzleCount": 500,
-      "batchCount": 5
+      "puzzleCount": 50
     },
     {
       "id": 17,
@@ -200,8 +177,7 @@
       "description": "Conjugate pairs for one digit form a network coloured in two alternating colours. One colour must be true and the other false.",
       "instruction": "Eliminate candidates of a contradictory colour, or candidates outside the network that see both colours.",
       "difficulty": 4,
-      "puzzleCount": 500,
-      "batchCount": 5
+      "puzzleCount": 50
     },
     {
       "id": 18,
@@ -209,8 +185,7 @@
       "description": "An alternating chain of strong and weak links for one digit starts and ends with strong links, so at least one endpoint must be true.",
       "instruction": "Remove that digit from cells that see both chain endpoints.",
       "difficulty": 5,
-      "puzzleCount": 500,
-      "batchCount": 5
+      "puzzleCount": 50
     },
     {
       "id": 19,
@@ -218,8 +193,7 @@
       "description": "A chain of two-candidate cells links through shared digits. When the endpoints share the same target digit, at least one endpoint must contain it.",
       "instruction": "Remove the target digit from cells outside the chain that see both endpoints.",
       "difficulty": 5,
-      "puzzleCount": 500,
-      "batchCount": 5
+      "puzzleCount": 50
     }
   ]
 }
